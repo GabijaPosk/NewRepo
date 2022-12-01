@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01C978F8-8395-4F91-83D6-D13AD919BD8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Praktinis</RootNamespace>
+    <AssemblyName>Praktinis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminas.Designer.cs">
+      <DependentUpon>Adminas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dalykai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dalykai.Designer.cs">
+      <DependentUpon>Dalykai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destytojas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojas.Designer.cs">
+      <DependentUpon>Destytojas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dėstytojai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dėstytojai.Designer.cs">
+      <DependentUpon>Dėstytojai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jungimasis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jungimasis.Designer.cs">
+      <DependentUpon>Jungimasis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menuform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menuform.Designer.cs">
+      <DependentUpon>Menuform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\Debug\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="PraktinisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PraktinisDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PraktinisDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\Studentai.cs">
+      <SubType>Form</SubType>
+      <Link>Studentai.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Studentai.Designer.cs">
+      <DependentUpon>Studentai.cs</DependentUpon>
+      <Link>Studentai.Designer.cs</Link>
+    </Compile>
+    <Compile Include="Studentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentas.Designer.cs">
+      <DependentUpon>Studentas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adminas.resx">
+      <DependentUpon>Adminas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dalykai.resx">
+      <DependentUpon>Dalykai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destytojas.resx">
+      <DependentUpon>Destytojas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dėstytojai.resx">
+      <DependentUpon>Dėstytojai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.lt-LT.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jungimasis.resx">
+      <DependentUpon>Jungimasis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menuform.resx">
+      <DependentUpon>Menuform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Adminas.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Destytojas.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Dėstytojai.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Form1.lt-LT.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Jungimasis.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Studentai.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Debug\Praktinis.Studentas.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Adminas.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Destytojas.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Dėstytojai.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Form1.lt-LT.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Jungimasis.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Studentai.resources" />
+    <EmbeddedResource Include="obj\Debug\Debug\Praktinis.Studentas.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Adminas.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Destytojas.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Dėstytojai.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Form1.lt-LT.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Jungimasis.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Studentai.resources" />
+    <EmbeddedResource Include="obj\Debug\Praktinis.Studentas.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Adminas.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Destytojas.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Dėstytojai.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Form1.lt-LT.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Form1.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Jungimasis.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Studentai.resources" />
+    <EmbeddedResource Include="obj\obj\Debug\Praktinis.Studentas.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\Studentai.resx">
+      <DependentUpon>Studentai.cs</DependentUpon>
+      <Link>Studentai.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentas.resx">
+      <DependentUpon>Studentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\bin\Debug\Praktinis.exe.config" />
+    <None Include="bin\Debug\Debug\Debug\Praktinis.exe.config" />
+    <None Include="bin\Debug\Debug\Praktinis.exe.config" />
+    <None Include="bin\Debug\Praktinis.exe.config" />
+    <None Include="obj\Debug\Debug\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\Debug\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Debug\Debug\Praktinis.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Debug\Debug\Praktinis.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Debug\Debug\Praktinis.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Debug\Praktinis.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Debug\Praktinis.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Debug\Praktinis.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Praktinis.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Praktinis.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Praktinis.csprojAssemblyReference.cache" />
+    <None Include="obj\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\obj\Debug\Praktinis.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\obj\Debug\Praktinis.csproj.GenerateResource.cache" />
+    <None Include="obj\obj\Debug\Praktinis.csprojAssemblyReference.cache" />
+    <None Include="PraktinisDataSet.xsc">
+      <DependentUpon>PraktinisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet.xss">
+      <DependentUpon>PraktinisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet1.xsc">
+      <DependentUpon>PraktinisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet1.xss">
+      <DependentUpon>PraktinisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet10.xsc">
+      <DependentUpon>PraktinisDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PraktinisDataSet10.xss">
+      <DependentUpon>PraktinisDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet2.xsc">
+      <DependentUpon>PraktinisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet2.xss">
+      <DependentUpon>PraktinisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet3.xsc">
+      <DependentUpon>PraktinisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet3.xss">
+      <DependentUpon>PraktinisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet4.xsc">
+      <DependentUpon>PraktinisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet4.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet4.xss">
+      <DependentUpon>PraktinisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet5.xsc">
+      <DependentUpon>PraktinisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet5.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet5.xss">
+      <DependentUpon>PraktinisDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet6.xsc">
+      <DependentUpon>PraktinisDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet6.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet6.xss">
+      <DependentUpon>PraktinisDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet7.xsc">
+      <DependentUpon>PraktinisDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet7.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet7.xss">
+      <DependentUpon>PraktinisDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet8.xsc">
+      <DependentUpon>PraktinisDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet8.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PraktinisDataSet8.xss">
+      <DependentUpon>PraktinisDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet9.xsc">
+      <DependentUpon>PraktinisDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="PraktinisDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PraktinisDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PraktinisDataSet9.xss">
+      <DependentUpon>PraktinisDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\bin\Debug\lt-LT\Praktinis.resources.dll" />
+    <Content Include="bin\bin\Debug\Praktinis.exe" />
+    <Content Include="bin\bin\Debug\Praktinis.pdb" />
+    <Content Include="bin\Debug\Debug\Debug\lt-LT\Praktinis.resources.dll" />
+    <Content Include="bin\Debug\Debug\Debug\Praktinis.exe" />
+    <Content Include="bin\Debug\Debug\Debug\Praktinis.pdb" />
+    <Content Include="bin\Debug\Debug\lt-LT\Praktinis.resources.dll" />
+    <Content Include="bin\Debug\Debug\Praktinis.exe" />
+    <Content Include="bin\Debug\Debug\Praktinis.pdb" />
+    <Content Include="bin\Debug\lt-LT\lt-LT\Praktinis.resources.dll" />
+    <Content Include="bin\Debug\lt-LT\Praktinis.resources.dll" />
+    <Content Include="bin\Debug\Praktinis.exe" />
+    <Content Include="bin\Debug\Praktinis.pdb" />
+    <Content Include="dbo.StudentTBL2.sql" />
+    <Content Include="obj\Debug\Debug\Debug\lt-LT\Praktinis.resources.dll" />
+    <Content Include="obj\Debug\Debug\Debug\Praktinis.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Debug\Debug\Praktinis.exe" />
+    <Content Include="obj\Debug\Debug\Debug\Praktinis.pdb" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet10.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet2.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet3.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet4.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet5.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet6.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet7.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet8.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\Debug\TempPE\PraktinisDataSet9.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\lt-LT\Praktinis.resources.dll" />
+    <Content Include="obj\Debug\Debug\Praktinis.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Debug\Praktinis.exe" />
+    <Content Include="obj\Debug\Debug\Praktinis.pdb" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet10.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet2.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet3.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet4.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet5.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet6.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet7.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet8.Designer.cs.dll" />
+    <Content Include="obj\Debug\Debug\TempPE\PraktinisDataSet9.Designer.cs.dll" />
+    <Content Include="obj\Debug\lt-LT\lt-LT\Praktinis.resources.dll" />
+    <Content Include="obj\Debug\Praktinis.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Praktinis.exe" />
+    <Content Include="obj\Debug\Praktinis.pdb" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet10.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet2.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet3.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet4.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet5.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet6.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet7.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet8.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TempPE\PraktinisDataSet9.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\lt-LT\Praktinis.resources.dll" />
+    <Content Include="obj\obj\Debug\Praktinis.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\obj\Debug\Praktinis.exe" />
+    <Content Include="obj\obj\Debug\Praktinis.pdb" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet1.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet10.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet2.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet3.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet4.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet5.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet6.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet7.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet8.Designer.cs.dll" />
+    <Content Include="obj\obj\Debug\TempPE\PraktinisDataSet9.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\bin\Release\" />
+    <Folder Include="bin\Release\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
